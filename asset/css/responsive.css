@@ -109,6 +109,9 @@
    .about-bio{
       margin-top: 30px;
    }
+   .references-content{
+    margin-bottom: 20px;
+   }
 }
 @keyframes slideInRight {
    from {

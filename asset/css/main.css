@@ -1,7 +1,7 @@
 .header {
    height: 64px;
-   /* background-color: 888888; */
 
+   /* overflow: hidden; */
 }
 
 .nav {
@@ -10,22 +10,22 @@
 
 }
 
-.nav li {
-   /* display: inline-block;   */
+.nav>li {
+
    list-style: none;
+   padding: 0 10px;
 }
 
 .nav li a {
-   color: #000;
+    color: var(--colorfont--); 
    text-decoration: none;
    line-height: 64px;
-   padding: 0 10px;
-   font-weight: 400px;
+   font-weight: 500px;
    font-size: 16px;
 }
 
-.nav li:hover {
-   background-color: #ccc;
+.nav li a:hover {
+   color: #000;
 }
 
 /* .img-bgr{
@@ -469,7 +469,7 @@
    border-radius: 3px;
    outline: none;
    font-size: 16px;
-color: var(--color--);
+   color: var(--color--);
 }
 
 .form__cmt {
@@ -530,42 +530,79 @@ color: var(--color--);
    border-color: #f33a58;
 }
 
-.contactAddress{
+.contactAddress {
    transition: 1s all ease;
- 
+
    transform: scale(0.5, .5);
 }
-.activeAddress{
+
+.activeAddress {
    transform: scale(1, 1);
 
 }
-.footer-nav-header{
+
+.footer-nav-header {
    font-size: 24px;
    font-weight: 500;
 }
+
 .footer-header,
-.text-small{
+.text-small {
    text-align: center;
    color: var(--color--);
 }
-.footer-nav-list{
+
+.footer-nav-list {
    display: flex;
    justify-content: center;
    margin-left: 14px;
 
 }
-.footer-nav-item{
+
+.footer-nav-item {
    list-style: none;
- 
+
 }
-.footer-nav-item i{
-   color:var(--color--);
+
+.footer-nav-item i {
+   color: var(--color--);
    font-size: 16px;
    padding-right: 20px;
 }
-.footer-nav-item:hover i{
+
+.footer-nav-item:hover i {
    color: #ccc;
 }
-.text-small-cv{
+
+.text-small-cv {
    font-size: 14px;
+}
+
+/* menu bar */
+.menu-btn {
+   padding: 10px 16px;
+   background-color:#ccc;
+   position: absolute;
+   top: 20px;
+   float: left;
+   display: none;
+}
+
+.menu-btn > i {
+   font-size: 20px;
+}
+/* <div id="close-menu" class="close-icon"> */
+.close-icon {
+   padding: 4px 4px;
+   background-color:#ccc;
+   position: absolute;
+   /* top: -17px; */
+   /* float: right; */
+   right: 0;
+   display: none;
+
+}
+
+.close-icon > i {
+   font-size: 20px;
 }

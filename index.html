@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./asset/css/grid.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <link rel="stylesheet" href="./asset/css/main.css">
+  <link rel="stylesheet" href="./asset/css/responsive.css">
   <link rel="stylesheet" href="./asset/font/fontawesome-free-6.0.0-web/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -29,15 +30,22 @@
 
   <div class="grid wide">
 
-    <div class="header m-b-4">
-      <ul class="nav">
-        <li class="nav__item"><a href="#">アバウト</a></li>
-        <li class="nav__item"><a href="#">スキル</a></li>
-        <li class="nav__item"><a href="#">エクスペリエンス</a></li>
-        <li class="nav__item"><a href="#">ポートフォリオ</a></li>
-        <li class="nav__item"><a href="#">リフェレンス</a></li>
-        <li class="nav__item"><a href="#">コンタクト</a></li>
+    <div class="header m-b-2">
+      <ul id="nav-test" class="nav">
+        <div id="close-btn" class="close-icon">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <li class="nav__item"><a href="#aboutMe">アバウト</a></li>
+        <li class="nav__item"><a href="#content-Professional">スキル</a></li>
+        <li class="nav__item"><a href="#word">エクスペリエンス</a></li>
+        <li class="nav__item"><a href="#education">ポートフォリオ</a></li>
+        <li class="nav__item"><a href="#references">リフェレンス</a></li>
+        <li class="nav__item"><a href="#contact">コンタクト</a></li>
       </ul>
+      <div id="menu-test" class="menu-btn">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </div>
+      
     </div>
     <div class="container">
       <div class="slider br-img shadow-strong">
@@ -45,7 +53,7 @@
         <div class="mask">
           <div class="text-center">
             <div class="mask__avatar">
-              <img src="./asset/image/avatar.jpg" alt="avatar">
+              <img src="./asset/image/bia.png" alt="avatar">
             </div>
             <div class="mask__bio">
               <h2 class="mask__bio-name">LE VAN THIN</h2>
@@ -75,9 +83,9 @@
     </div>
     <div class="content">
       <!-- About Me -->
-      <div class="conten-About shadow-strong p-mrg-5">
+      <div id="aboutMe" class="conten-About shadow-strong p-mrg-5">
         <div class="row">
-          <div class="col p-6">
+          <div class="col p-6 t-6 m-12">
             <h2 class="mrg-24">About Me</h2>
             <p>始めました、私はレヴァンティンと申しますティンさんが呼ばれます。
               私の強みは責任感があることです具体的には何に事も最後までやっています。仕事先の上司からも責任感がある人を言われました。日本人の働き方や習慣、文化などを学びまして、積極的に習得してきました。</p>
@@ -86,17 +94,19 @@
               現在は　Javascript とhtml/css、ReactJS、Responsive、WSL Ubuntuを独学しています</p>
 
           </div>
-          <div class="col p-6">
-            <div class="row pl-10">
-              <div class="col p-12">
+          <div class="col p-6 t-6 m-12">
+            
                 <h2 class="mrg-24">Bio</h2>
                 <div class="row">
-                  <div class="col p-5 pb-2">
-                    <i class="bio-Icon  fa-solid fa-calendar-days" style="width:30px;opacity:0.8;"></i>
-                    <span class="fw-bolder">Age</span>
-                  </div>
-                  <div class="col p-7 pb-2">
-                    <span>34</span>
+                  <div class="text">
+                    
+                    <div class="col p-5 pb-2">
+                      <i class="bio-Icon  fa-solid fa-calendar-days" style="width:30px;opacity:0.8;"></i>
+                      <span class="fw-bolder">Age</span>
+                    </div>
+                    <div class="col p-7 pb-2">
+                      <span>34</span>
+                    </div>
                   </div>
                   <!--  -->
                   <div class="col p-5 pb-2">
@@ -130,20 +140,20 @@
 
                 </div>
 
-              </div>
+              
 
-            </div>
+            
           </div>
 
         </div>
 
       </div>
       <!-- Professional Skills -->
-      <div class="content-Skill shadow-strong p-mrg-5" id="content-Professional">
+      <div  class="content-Skill shadow-strong p-mrg-5" id="content-Professional">
         <div class="professional">
           <h2 class="mrg-24">Professional Skills</h2>
           <div class="row">
-            <div class="col p-6 skill-section">
+            <div class="col p-6 skill-section t-6 m-12">
               <span class="pb-2">HTML</span>
               <div class="progress m-t-1 m-b-2">
                 <div class="progress-bar bar-HTML" data-progress="100">
@@ -163,7 +173,7 @@
                 <div class="progress-bar bar-Responsive" data-progress="100"></div>
               </div>
             </div>
-            <div class="col p-6">
+            <div class="col p-6 t-6 m-12">
               <span class="pb-2">ReactJS</span>
               <div class="progress m-t-1 m-b-2">
                 <div class="progress-bar bar-ReactJS" data-progress="70"></div>
@@ -186,11 +196,11 @@
 
       </div>
       <!-- Work Experience -->
-      <div class="content-Experience shadow-strong p-mrg-5">
+      <div id="word" class="content-Experience shadow-strong p-mrg-5">
         <div class="experience">
           <h2 class="mrg-24">Work Experience</h2>
           <div class="row">
-            <div class="col p-12">
+            <div class="col p-12 t-12 m-12">
               <div class="timeline-card" id="experience-card">
                 <div class="experience-list experience-list-1 m-l-4 m-b-4">
                   <p class="pb-1"><strong>株式会社東洋システムサイエンス</strong></p>
@@ -224,7 +234,7 @@
         </div>
       </div>
       <!-- Education -->
-      <div class="content-Experience shadow-strong p-mrg-5">
+      <div id="education" class="content-Experience shadow-strong p-mrg-5">
         <div class="experience">
           <h2 class="mrg-24">Education</h2>
           <div class="row">
@@ -263,7 +273,7 @@
       </div>
 
       <!-- References -->
-      <div class="content-References shadow-strong p-mrg-5">
+      <div id="references" class="content-References shadow-strong p-mrg-5">
         <div class="references">
           <h2 class="mrg-24">References</h2>
           <div class="row">
@@ -319,11 +329,11 @@
           </div>
         </div>
       </div>
-      <div class="content-contact shadow-strong p-mrg-5">
+      <div id="contact" class="content-contact shadow-strong p-mrg-5">
         <div class="content-header">
           <h2 class="m-b-4">Contact</h2>
           <div class="row">
-            <div class="col p-5">
+            <div class="col p-5 t-5 m-12">
               <div class="contactAddress">
                 <div class="contact-header m-b-5">
                   <div class="contact-phone m-b-1">
@@ -357,7 +367,7 @@
               </div>
              
             </div>
-            <div class="col p-7">
+            <div class="col p-7 t-7 m-12">
               <div class="contactAddress">
                 <img src="./asset/image/map.jpg" alt="" style="width: 100%;  height: 100%;">
 
@@ -370,7 +380,7 @@
 
     <div class="footer">
 <div class="row">
-  <div class="col p-12">
+  <div class="col p-12 ">
     <div class="footer-header m-t-5 ">
       <div class="footer-nav-header">MyCV</div>
       <div class="footer-nav m-t-1 ">

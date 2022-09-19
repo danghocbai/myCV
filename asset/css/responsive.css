@@ -1,0 +1,52 @@
+/* PC */
+@media (min-width: 1024px){
+
+    
+}
+/* table */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+/* mobile */
+@media (max-width:739px){
+
+
+}
+@media (max-width: 1023px)
+{
+   .nav {
+      display: none;
+      position:relative;
+      z-index: 2;
+      margin-top: 60px;
+      animation:slideInRight ease .3s ;
+      
+   }
+   
+   .nav > li {
+   
+      background-color: rgb(251,251,251);
+      height: 46px;
+   }
+   .nav > li > a{
+      line-height: 46px;
+   }
+   .close-icon,
+   .menu-btn{
+      display: block;
+   }
+}
+@keyframes slideInRight {
+   from {
+      opacity: 0;
+      transform: translateX(-100%)
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+
+   }
+}
+.active-list{
+   display: inline-block;
+}

@@ -140,30 +140,27 @@ function Validator(formSelector) {
         return errorMsg;
       });
       if (errorMsg) {
-        var formGroup = getParent(e.target, ".form__group")
-        if(formGroup){
-          formGroup.classList.add("invalid")
+        var formGroup = getParent(e.target, ".form__group");
+        if (formGroup) {
+          formGroup.classList.add("invalid");
           var formMessage = formGroup.querySelector(".form__msg");
-          if(formMessage){
+          if (formMessage) {
             formMessage.innerText = errorMsg;
           }
         }
       }
     }
-    function handleClear(e){
-      var formGroup = getParent(e.target, ".form__group")
-      if(formGroup.classList.contains("invalid")){
-        formGroup.classList.remove("invalid")
+    function handleClear(e) {
+      var formGroup = getParent(e.target, ".form__group");
+      if (formGroup.classList.contains("invalid")) {
+        formGroup.classList.remove("invalid");
         var formMessage = formGroup.querySelector(".form__msg");
-        if(formMessage){
-          formMessage.innerText="";
+        if (formMessage) {
+          formMessage.innerText = "";
         }
       }
-
     }
   }
-
- 
 }
 
 // contact
@@ -181,3 +178,20 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// menu-bar
+const navList = document.getElementById("nav-test");
+const menuList = document.getElementById("menu-test");
+const closeBtn = document.getElementById("close-btn");
+
+menuList.onclick = function () {
+  navList.classList.add("active-list");
+};
+document.addEventListener("keydown", (e) => {
+  if (e.keyCode == 27) {
+    navList.classList.remove("active-list");
+  }
+});
+closeBtn.onclick =  function () {
+  navList.classList.remove("active-list");
+};

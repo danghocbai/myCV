@@ -72,6 +72,9 @@
       flex: 0 0 100%;
       max-width: 100%;
   }
+  .nav {
+   width: 150px;
+  }
   .about-bio{
    margin-top: 30px;
 }

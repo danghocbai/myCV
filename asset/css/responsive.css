@@ -35,6 +35,9 @@
    .menu-btn{
       display: block;
    }
+   .about-bio{
+      margin-top: 30px;
+   }
 }
 @keyframes slideInRight {
    from {

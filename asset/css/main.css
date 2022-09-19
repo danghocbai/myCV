@@ -596,7 +596,7 @@
    padding: 4px 4px;
    background-color:#ccc;
    position: absolute;
-   /* top: -17px; */
+    top: 0px;
    /* float: right; */
    right: 0;
    display: none;

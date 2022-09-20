@@ -532,7 +532,6 @@
 
 .contactAddress {
    transition: 1s all ease;
-
    transform: scale(0.5, .5);
 }
 

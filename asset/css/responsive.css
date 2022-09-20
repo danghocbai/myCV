@@ -82,6 +82,9 @@
 .menu-btn{
    display: block;
 }
+.contactAddress-map > img {
+    height: 80% !important;
+   }
 }
 @media (max-width: 1023px)
 {
@@ -111,6 +114,14 @@
    }
    .references-content{
     margin-bottom: 20px;
+   }
+   .contactAddress-map{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+   }
+   .contactAddress-map > img {
+    height: 91% !important;
    }
 }
 @keyframes slideInRight {

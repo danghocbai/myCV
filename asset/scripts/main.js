@@ -183,7 +183,13 @@ window.addEventListener("scroll", () => {
 const navList = document.getElementById("nav-test");
 const menuList = document.getElementById("menu-test");
 const closeBtn = document.getElementById("close-btn");
-
+const closeBtns = document.getElementsByClassName("nav-a");
+// console.log(closeBtns)
+for(var i = 0; i < closeBtns.length; i++){
+  closeBtns[i].onclick = function() {
+    navList.classList.remove("active-list");
+};
+}
 
 menuList.onclick = function () {
   navList.classList.add("active-list");
@@ -194,5 +200,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 closeBtn.onclick =  function () {
-  navList.classList.remove("active-list");
+   navList.classList.remove("active-list");
 };
+

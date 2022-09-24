@@ -493,7 +493,9 @@
    color: #fff;
    border: none;
 }
-
+.form__submit:hover{
+   cursor: pointer;
+}
 .form__cmt:focus,
 .form__input:focus {
    /* border-color: #2600ff; */

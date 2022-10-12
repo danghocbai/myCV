@@ -203,3 +203,31 @@ closeBtn.onclick =  function () {
    navList.classList.remove("active-list");
 };
 
+// scrollToTop
+
+const btnScrollTop = document.getElementById("btnScrollTop")
+
+window.addEventListener("scroll", () => {
+ 
+    const scrollTops = window.scrollY;
+console.log(scrollTops)
+
+     if( scrollTops >= 600){
+
+ btnScrollTop.classList.add("btn-active")
+      
+    }
+   else{
+ btnScrollTop.classList.remove("btn-active")
+
+   }
+  
+});
+btnScrollTop.addEventListener("click", ()=>{
+
+ window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth"
+ })
+})
